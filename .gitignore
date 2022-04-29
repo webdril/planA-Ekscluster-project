@@ -31,4 +31,3 @@ terraform_conf/
 harbor/
 *.terraform.*
 kubeconfig/
-.gitignore
