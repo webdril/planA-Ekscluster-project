@@ -2,6 +2,12 @@ This is a devops project that requires the deplyment of a kubernetes cluster fro
 
 # Please go through the documentation below to create an EKS cluster from the codes in this repository.<br><br>
 
+Please install AWS CLI by visiting the following page:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
+
+Configure the installed aws cli with the following guide:
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+
 **Step 1:** Create a folder on your pc/mac desktop and name the folder projects.
 
 **Step 2:** Open the projects folder from your file explorer, and once inside the folder, right click on an empty space and choose "open in terminal" from the list of options presented to you.
