@@ -5,6 +5,8 @@
 *.tfstate
 *.tfstate.*
 
+kubeconfig_planA-emeka-eks-YNDNknVo
+
 # Crash log files
 crash.log
 

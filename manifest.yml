@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: microservice
+  name: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: microservice
+    spec:
+      containers:
+      - image: 6480/microserviceapp
+        name: microservice
+        imagePullPolicy: Always
+        resources: {}
+        ports:
+          - containerPort: 3000 
+status: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice
+  labels:
+    run: microservice
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+  selector:
+    app: microservice
+  type: NodePort
