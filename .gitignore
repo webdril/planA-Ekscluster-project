@@ -30,4 +30,4 @@ override.tf.json
 terraform_conf/
 harbor/
 *.terraform.*
-kubeconfig/
+*kubeconfig_*
